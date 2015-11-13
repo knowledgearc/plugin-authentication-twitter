@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.2" type="plugin" group="authentication" method="upgrade">
+    <name>plg_authentication_twitter</name>
+    <author>KnowledgeArc</author>
+    <creationDate>2015/10/16</creationDate>
+    <copyright>Copyright (C) 2015 KnowledgeArc Ltd. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>development@knowledgearc.com</authorEmail>
+    <authorUrl>www.knowledgearc.org</authorUrl>
+    <version>1.0.0-dev</version>
+    <description>PLG_AUTHENTICATION_TWITTER_XML_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="twitter">twitter.php</filename>
+        <folder>layout</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_authentication_twitter.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_authentication_twitter.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="clientid"
+                    type="text"
+                    label="PLG_AUTHENTICATION_TWITTER_CLIENTID_LABEL"
+                    description="PLG_AUTHENTICATION_TWITTER_CLIENTID_DESC"/>
+                <field
+                    name="clientsecret"
+                    type="text"
+                    label="PLG_AUTHENTICATION_TWITTER_CLIENTSECRET_LABEL"
+                    description="PLG_AUTHENTICATION_TWITTER_CLIENTSECRET_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
