@@ -2,7 +2,7 @@
 /**
  * @package     JSpace.Plugin
  *
- * @copyright   Copyright (C) 2014-2015 KnowledgeArc Ltd. All rights reserved.
+ * @copyright   Copyright (C) 2014-2016 KnowledgeArc Ltd. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
@@ -17,11 +17,7 @@ defined('_JEXEC') or die;
  */
 class PlgAuthenticationTwitter extends JPlugin
 {
-    public function __construct(&$subject, $config)
-    {
-        parent::__construct($subject, $config);
-        $this->loadLanguage();
-    }
+    protected $autoloadLanguage = true;
 
     /**
      * Handles authentication via Twitter and reports back to the subject
